@@ -1,0 +1,269 @@
+{
+    /** 
+     * Nord colorscheme, redesigned to correctly match the color guidlines from the official website:
+     *   https://www.nordtheme.com/docs/colors-and-palettes
+     * 
+     * References:
+     *   1. https://www.sublimetext.com/docs/color_schemes.html
+     *   2. https://www.sublimetext.com/docs/scope_naming.html
+     */
+    "name": "Nordex Pure Dark",
+    "author": "devedge",
+    "variables": {
+        "nord0": "#2e3440",
+        "nord1": "#3b4252",
+        "nord2": "#434c5e",
+        "nord3": "#4c566a",
+        "nord4": "#d8dee9",
+        "nord5": "#e5e9f0",
+        "nord6": "#eceff4",
+        "nord7": "#8fbcbb",
+        "nord8": "#88c0d0",
+        "nord9": "#81a1c1",
+        "nord10": "#5e81ac",
+        "nord11": "#bf616a",
+        "nord12": "#d08770",
+        "nord13": "#ebcb8b",
+        "nord14": "#a3be8c",
+        "nord15": "#b48ead",
+        // "nord_indent_guide": "color(var(nord2) alpha(0.7))",
+        "nord_indent_guide": "var(nord2)",
+        // "nord_selection": "color(var(nord2) alpha(0.8))",
+        "nord_selection": "var(nord2)",
+    },
+    "globals": {
+        "background": "var(nord0)",
+        "foreground": "var(nord4)",
+        "invisibles": "var(nord3)",
+        "caret": "var(nord4)",
+        // "block_caret"
+        // "block_caret_border"
+        // "block_caret_underline"
+        // "block_caret_corner_style"
+        // "block_caret_corner_radius"
+        "line_highlight": "var(nord1)",
+        "misspelling": "var(nord11)",
+        // "minimap_border": "color(var(nord2) alpha(0.32))",
+        // "fold_marker"
+        "minimap_border": "var(nord2)",
+        "accent": "var(nord8)",
+        // no idea about the CSS stuff
+        "gutter": "var(nord0)",
+        "gutter_foreground": "var(nord3)",
+        // "gutter_foregrount_highlight"
+        // "line_diff_width"
+        "line_diff_added": "var(nord14)",
+        "line_diff_modified": "var(nord13)",
+        "line_diff_deleted": "var(nord11)",
+        "selection": "var(nord_selection)",
+        // "selection_foreground"
+        "selection_border": "var(nord_selection)",
+        // "selection_border_width"
+        "inactive_selection": "var(nord_selection)",
+        // "inactive_selection_border"
+        // "inactive_selection_foreground"
+        // "selection_corner_style"
+        // "selection_corner_radius"
+        "highlight": "var(nord8)",
+        "find_highlight": "var(nord8)",
+        "find_highlight_foreground": "var(nord0)",
+        // "scroll_highlight"
+        // "scroll_selected_highlight"
+        // "rulers"
+        "guide": "var(nord_indent_guide)",
+        "active_guide": "var(nord3)",
+        "stack_guide": "var(nord_indent_guide)",
+        "brackets_options": "underline",
+        "brackets_foreground": "var(nord8)",
+        // "brackets_contents_options"
+        // "brackets_contents_foreground"
+        "tags_options": "underline",
+        "tags_foreground": "var(nord8)",
+        "shadow": "var(nord0)",
+        "shadow_width": "8",
+    },
+    "rules": [
+        {
+            "name": "[Comment] Comment",
+            "scope": "comment",
+            "foreground": "var(nord3)"
+        },
+        {
+            "name": "[Constants] Constant",
+            "scope": "constant",
+            "foreground": "var(nord4)"
+        },
+        {
+            "name": "[Constants] Numeric",
+            "scope": "constant.numeric",
+            "foreground": "var(nord15)"
+        },
+        {
+            "name": "[Constants] BuiltIn",
+            "scope": "constant.language",
+            "foreground": "var(nord8)"
+        },
+        {
+            "name": "[Constants] Escape",
+            "scope": "constant.character.escape",
+            "foreground": "var(nord13)"
+        },
+        {
+            "name": "[Entity] Inherited Class/Interface/Trait",
+            "scope": "entity.other.inherited-class",
+            "foreground": "var(nord7)"
+        },
+        {
+            "name": "[Entity] Name",
+            "scope": "entity.name",
+            "foreground": "var(nord7)"
+        },
+        {
+            "name": "[Entity] Section",
+            "scope": "entity.name.section",
+            "foreground": "var(nord8)"
+        },
+        {
+            "name": "[Entity] Tag",
+            "scope": "entity.name.tag",
+            "foreground": "var(nord9)"
+        },
+        {
+            "name": "[Entity] Attribute Name",
+            "scope": "entity.other.attribute-name",
+            "foreground": "var(nord7)"
+        },
+        {
+            "name": "[Invalid] Invalid",
+            "scope": "invalid",
+            "foreground": "var(nord6)",
+            "background": "var(nord11)"
+        },
+        {
+            "name": "[Keyword] Keyword",
+            "scope": "keyword",
+            "foreground": "var(nord9)"
+        },
+        {
+            "name": "[Keyword] Control",
+            "scope": "keyword.control",
+            "foreground": "var(nord9)"
+        },
+        {
+            "name": "[Keyword] Declaration",
+            "scope": "keyword.declaration",
+            "foreground": "var(nord9)"
+        },
+        {
+            "name": "[Keyword] Operator",
+            "scope": "keyword.operator",
+            "foreground": "var(nord9)"
+        },
+        {
+            "name": "[Markup] Heading",
+            "scope": "markup.heading",
+            "foreground": "var(nord8)",
+            "font_style": "bold"
+        },
+        {
+            "name": "[Markup] List",
+            "scope": "markup.list.unnumbered, markup.list.numbered",
+            "foreground": "var(nord4)"
+        },
+        {
+            "name": "[Markup] Bold",
+            "scope": "markup.bold",
+            "font_style": "bold"
+        },
+        {
+            "name": "[Markup] Italic",
+            "scope": "markup.italic",
+            "font_style": "italic"
+        },
+        {
+            "name": "[Markup] Inserted",
+            "scope": "markup.inserted",
+            "foreground": "var(nord14)"
+        },
+        {
+            "name": "[Markup] Deleted",
+            "scope": "markup.deleted",
+            "foreground": "var(nord11)"
+        },
+        {
+            "name": "[Markup] Changed",
+            "scope": "markup.changed",
+            "foreground": "var(nord13)"
+        },
+        {
+            "name": "[Markup] Quote",
+            "scope": "markup.quote",
+            "foreground": "var(nord3)"
+        },
+        {
+            "name": "[Markup] Raw",
+            "scope": "markup.raw.inline, markup.raw.block",
+            "foreground": "var(nord7)"
+        },
+        {
+            "name": "[Markup] Other",
+            "scope": "markup.other",
+            "foreground": "var(nord4)"
+        },
+        // meta
+        // punctuation
+        {
+            "name": "[Source] Source",
+            "scope": "source",
+            "foreground": "var(nord6)"
+        },
+        // storage
+        {
+            "name": "[String] String",
+            "scope": "string",
+            "foreground": "var(nord14)"
+        },
+        {
+            "name": "[String] RegExp",
+            "scope": "string.regexp",
+            "foreground": "var(nord13)"
+        },
+        // support
+        // text
+        {
+            "name": "[Variable] Function",
+            "scope": "variable.function",
+            "foreground": "var(nord8)"
+        },
+        {
+            "name": "[Variable] Language",
+            "scope": "variable.language",
+            "foreground": "var(nord9)"
+        },
+        {
+            "name": "[Variable] Parameter",
+            "scope": "variable.parameter",
+            "foreground": "var(nord4)"
+        },
+        {
+            "name": "[Variable] Variable",
+            "scope": "variable",
+            "foreground": "var(nord4)"
+        },
+        {
+            "name": "[Markdown] Fenced Code Block",
+            "scope": "text.html.markdown punctuation.definition.raw.code-fence.begin.markdown, text.html.markdown punctuation.definition.raw.code-fence.end.markdown, text.html.markdown markup.raw.code-fence.markdown constant.other.language-name.markdown",
+            "foreground": "var(nord7)"
+        },
+        {
+            "name": "[JSON] JSON Keys",
+            "scope": "source.json meta.mapping.key string",
+            "foreground": "var(nord7)"
+        },
+        {
+            "name": "[JSON] JSON Key Surrounding Quotes",
+            "scope": "source.json meta.mapping.key punctuation.definition.string.begin, source.json meta.mapping.key punctuation.definition.string.end",
+            "foreground": "var(nord4)"
+        },
+    ]
+}
